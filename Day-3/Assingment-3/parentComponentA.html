@@ -1,0 +1,12 @@
+<template>
+     <lightning-card variant="Narrow" title="I am Parent Component">
+
+        <c-child-component-a onvaluechange={handleValueChange}></c-child-component-a>
+        
+        <p style="padding: 10px;"  class="slds-p-horizontal_small">
+
+            Value from Child Component: {receivedValue}
+        </p>
+
+     </lightning-card>
+</template>
