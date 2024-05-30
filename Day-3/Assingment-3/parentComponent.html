@@ -1,0 +1,11 @@
+<template>
+      <lightning-card variant="Narrow" title="I am Parent Component">
+        
+        <lightning-input style="padding: 10px;"  class="slds-p-horizontal_small" 
+        label="Enter a value" 
+        onchange={handleChange}>
+        </lightning-input>
+
+        <c-child-component childvalue={inputValue}></c-child-component>
+      </lightning-card>
+</template> 
