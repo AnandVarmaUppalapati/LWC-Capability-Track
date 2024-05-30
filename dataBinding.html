@@ -1,0 +1,17 @@
+<template>  
+    <lightning-card variant="Narrow"  title="Data Binding" icon-name="standard:account">
+
+        <p style="padding: 10px;"  class="slds-p-horizontal_small">Hello World My name is {myName}! </p>
+        
+        <p class="slds-p-horizontal_small">
+            <lightning-input style="padding: 10px;"  type="checkbox" label="Click Me" onchange={handlechange}></lightning-input>
+        </p>
+            <template lwc:if={showMe}>
+                <p class="slds-p-horizontal_small">I am Visible.</p>
+            </template>
+    
+            <template lwc:else>
+                <p class="slds-p-horizontal_small">I am not Visible.</p>
+              </template>
+    </lightning-card>  
+</template> 
