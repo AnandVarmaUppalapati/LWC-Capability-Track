@@ -1,0 +1,16 @@
+<template>
+    <lightning-card variant="Narrow" title="Display Contacts Based on Search">
+
+        <lightning-input style="padding: 10px;"  class="slds-p-horizontal_small" 
+                         type="text"
+                         label="Search Contacts"
+                         onchange={handleSearch}> 
+        </lightning-input>
+
+        <lightning-datatable data={contacts} 
+                             columns={columns} 
+                             key-field="id">
+        </lightning-datatable>
+
+    </lightning-card>
+</template>
