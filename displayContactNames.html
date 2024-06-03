@@ -1,0 +1,18 @@
+<template>
+
+    <lightning-card variant="Narrow" title="Contact Details" icon-name="standard:contact">
+
+      <div class="slds-m-around_medium">
+        <template lwc:if={contact.data}>
+            <ul class="slds-list_dotted">
+                <template for:each={contact.data} for:item="contact">
+                    <li key={contact.Id}> <b>Contact Name : </b> {contact.Name} </li>
+                </template>
+            </ul>
+        </template>
+        <template lwc:elseif={contact.error}>
+            <p>Error retrieving contacts.</p>
+        </template>
+      </div>
+    </lightning-card>
+</template>
