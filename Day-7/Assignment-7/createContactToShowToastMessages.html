@@ -1,0 +1,10 @@
+<template>
+    <lightning-card variant="Narrow" title="Create Contact">
+                <lightning-record-form
+                object-api-name={objectApiName}
+                fields={fields}
+                onsuccess={handlesuccess}
+                onerror={handleError}>
+        </lightning-record-form>
+    </lightning-card>
+</template>
