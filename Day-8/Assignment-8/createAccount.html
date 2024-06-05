@@ -1,0 +1,18 @@
+<template>
+
+    <lightning-card variant="Narrow" title="Create Record using lightning/uiRecordApi">
+
+        <lightning-input style="padding: 10px;"  class="slds-p-horizontal_small" label="Name" value={accountValue} onchange={handleChange}></lightning-input>
+        <lightning-combobox style="padding: 10px;"  class="slds-p-horizontal_small"
+            label="Rating"
+            value={ratingvalue}
+            placeholder="Select"
+            options={options}
+            onchange={dataChange} >
+        </lightning-combobox>
+
+        <lightning-button style="padding: 10px;"  class="slds-p-horizontal_small" variant="brand" label="Create Account" onclick={createAccounthandleChange}></lightning-button>
+
+    </lightning-card>
+    
+</template>
